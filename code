@@ -1,0 +1,98 @@
+// Importing necessary libraries
+import React from 'react';
+import './App.css';
+import avatar from './avatar.png'; // Placeholder for your avatar image
+
+function App() {
+  return (
+    <div className="App">
+      {/* Header Section */}
+      <header className="App-header">
+        <img src={avatar} alt="Dev Patel" className="avatar" />
+        <h1>Dev Patel</h1>
+        <p>
+          <a href="mailto:pateldevp@outlook.com">pateldevp@outlook.com</a> | (269) 873-4144 | Fishers, IN
+        </p>
+        <p>
+          <a href="https://www.linkedin.com/in/devp9" target="_blank" rel="noopener noreferrer">
+            LinkedIn
+          </a>
+        </p>
+      </header>
+
+      {/* About Section */}
+      <section className="about">
+        <h2>About Me</h2>
+        <p>
+          I am a senior pursuing a Bachelor of Business Administration in Computer Information Systems at Western Michigan University. I have a passion for utilizing technology to streamline business operations and improve user experiences.
+        </p>
+      </section>
+
+      {/* Technical Skills Section */}
+      <section className="skills">
+        <h2>Technical Skills</h2>
+        <ul>
+          <li>Programming: Python, Java, Bash, SQL, HTML, CSS, JavaScript</li>
+          <li>Cloud & DevOps: AWS (S3), Docker, Kubernetes, GitHub, Terraform</li>
+          <li>Data Analytics: Excel (Power Query), NumPy, Pandas, Matplotlib</li>
+        </ul>
+      </section>
+
+      {/* Education Section */}
+      <section className="education">
+        <h2>Education</h2>
+        <p>
+          <strong>Western Michigan University</strong> (Graduation: April 2025)
+          <br />
+          Bachelor of Business Administration in Computer Information Systems
+        </p>
+        <p>Relevant Coursework: Database Management, Data Analytics, Java, Python, Cloud Computing</p>
+        <p>Activities: Business Association of Mentors (B.A.M), SPuRS, B.A.I.T</p>
+      </section>
+
+      {/* Work Experience Section */}
+      <section className="work">
+        <h2>Work Experience</h2>
+        <div>
+          <h3>Western Michigan University</h3>
+          <p><em>Student Center Associate (Aug. 2022 – Present)</em></p>
+          <ul>
+            <li>Utilized Microsoft Excel and Teams to streamline workflows and manage inventory.</li>
+            <li>Built a student ID database in Excel, enhancing operational efficiency.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>The UPS Store</h3>
+          <p><em>Sales Associate (Aug. 2022 – Present)</em></p>
+          <ul>
+            <li>Provided excellent customer service and handled daily transactions.</li>
+            <li>Developed problem-solving skills to address customer inquiries effectively.</li>
+          </ul>
+        </div>
+      </section>
+
+      {/* Projects Section */}
+      <section className="projects">
+        <h2>Projects</h2>
+        <ul>
+          <li>
+            <strong>AI-Powered CRM System</strong>: Developed a CRM system using Python and ChatGPT API to enhance client interactions and decision-making processes.
+          </li>
+          <li>
+            <strong>AWS-Hosted Website</strong>: Designed and deployed a website using AWS S3, gaining experience in cloud computing.
+          </li>
+          <li>
+            <strong>Data Analysis Project</strong>: Conducted data analysis using Excel, Python (NumPy, Pandas), and created visualizations with Matplotlib.
+          </li>
+        </ul>
+      </section>
+
+      {/* Footer Section */}
+      <footer>
+        <p>&copy; 2024 Dev Patel | All rights reserved.</p>
+      </footer>
+    </div>
+  );
+}
+
+export default App;
